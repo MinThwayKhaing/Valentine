@@ -6,82 +6,112 @@
     <title>For My Love</title>
     <meta
       name="description"
-      content="A small Valentine gift website made with love."
+      content="A romantic Valentine website gift made with love."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&family=Playfair+Display:wght@600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Sora:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="bg-orb orb-one" aria-hidden="true"></div>
-    <div class="bg-orb orb-two" aria-hidden="true"></div>
+    <div class="grain" aria-hidden="true"></div>
+    <div class="glow glow-left" aria-hidden="true"></div>
+    <div class="glow glow-right" aria-hidden="true"></div>
 
-    <header class="hero">
-      <p class="eyebrow">A little gift for you</p>
-      <h1>
-        Happy Valentine,<br />
-        <span class="name">My Love</span>
-      </h1>
-      <p class="intro">
-        Every day with you feels warm, easy, and full of joy. This page is only
-        for us.
-      </p>
-      <button id="revealBtn" class="button" type="button">Open my letter</button>
-    </header>
-
-    <main class="content">
-      <section class="photo-panel">
-        <div class="photo-frame">
-          <img
-            src="assets/our-photo.jpg"
-            alt="Our photo together"
-            id="couplePhoto"
-          />
+    <main class="page">
+      <section class="hero panel">
+        <p class="eyebrow">For the one I love most</p>
+        <h1 class="title">
+          Happy Valentine,
+          <span>My Love</span>
+        </h1>
+        <p class="subtitle">
+          Every version of life feels better with you in it. This little page is
+          my way of saying you are my favorite person, always.
+        </p>
+        <div class="hero-actions">
+          <button id="revealBtn" class="button" type="button">
+            Unseal My Love Letter
+          </button>
+          <p class="micro">Press it for a small surprise.</p>
         </div>
-        <p class="hint">Our best smile, my favorite memory.</p>
       </section>
 
-      <section class="letter is-hidden" id="letter" aria-hidden="true">
+      <section class="memory-grid">
+        <article class="photo-panel panel">
+          <div class="photo-frame">
+            <img
+              src="assets/our-photo.jpg"
+              alt="Our photo together"
+              id="couplePhoto"
+            />
+          </div>
+          <p class="caption">My favorite smile in my favorite memory.</p>
+        </article>
+
+        <article class="promise panel">
+          <h2>My Promise</h2>
+          <p>
+            I promise to keep loving you loudly in quiet moments and softly in
+            hard moments.
+          </p>
+          <ul>
+            <li>I choose you in every season.</li>
+            <li>I protect your peace like it is mine.</li>
+            <li>I will keep making memories with you.</li>
+          </ul>
+        </article>
+      </section>
+
+      <section class="letter panel is-hidden" id="letter" aria-hidden="true">
+        <div class="wax" aria-hidden="true">&hearts;</div>
         <h2>To my favorite person,</h2>
         <p>
-          Thank you for being my safe place and my happy place at the same time.
-          You make simple moments feel special.
+          Thank you for being my safe place and my happy place at the same
+          time. With you, ordinary days feel golden.
         </p>
         <p>
-          I love your smile, your kindness, and the way you care so deeply. I am
-          grateful for every laugh, every walk, and every memory we build.
+          I love your smile, your kindness, and your beautiful heart. You make
+          me want to become better while feeling fully accepted for who I am.
         </p>
         <p>
-          No matter where life takes us, I want to keep choosing you. Today and
-          always.
+          No matter where life takes us, I want your hand in mine and your
+          laughter in my days. Today, tomorrow, and always.
         </p>
-        <p class="sign">With all my love,<br />Your Boyfriend</p>
+        <p class="sign">Forever yours,<br />Your Boyfriend</p>
       </section>
 
-      <section class="reasons">
-        <h2>Why I love you</h2>
-        <div class="cards">
-          <article class="card">
-            <h3>Your heart</h3>
-            <p>You are kind, gentle, and strong in ways that inspire me.</p>
+      <section class="reasons panel">
+        <h2>Three Things I Adore About You</h2>
+        <div class="reasons-grid">
+          <article class="reason-card">
+            <h3>Your Heart</h3>
+            <p>
+              You are kind in ways people do not always see, and that makes you
+              rare.
+            </p>
           </article>
-          <article class="card">
-            <h3>Your smile</h3>
-            <p>Your smile turns even my hardest day into a beautiful one.</p>
+          <article class="reason-card">
+            <h3>Your Energy</h3>
+            <p>
+              You make every room brighter and every moment warmer just by being
+              you.
+            </p>
           </article>
-          <article class="card">
-            <h3>Our bond</h3>
-            <p>With you, I feel understood, supported, and truly at home.</p>
+          <article class="reason-card">
+            <h3>Our Love</h3>
+            <p>
+              What we have feels honest, calm, and strong. It feels like home.
+            </p>
           </article>
         </div>
       </section>
     </main>
 
-    <footer class="footer">Made with love for Valentine.</footer>
+    <footer class="footer">Made only for us.</footer>
 
     <script src="script.js"></script>
   </body>
